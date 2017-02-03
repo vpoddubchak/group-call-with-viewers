@@ -132,6 +132,9 @@ function onExistingParticipants(msg) {
               this.generateOffer (participant.offerToReceiveVideo.bind(participant));
         });
 	}
+	else{
+    	    showViewer(name);
+    	}
 
 	msg.data.forEach(receiveVideo);
 	msg.viewers.forEach(showViewer);
